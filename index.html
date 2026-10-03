@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="HUGO CUEVA - Construcción, ingeniería, proyectos e instalaciones eléctricas.">
+<title>HUGO CUEVA | Construcción & Ingeniería Eléctrica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow"></div>
+<header class="header" id="header">
+<div class="header-electric-lines">
+<span class="header-electric-line line-a"></span>
+<span class="header-electric-line line-b"></span>
+<span class="header-electric-line line-c"></span>
+</div>
+<div class="nav-container">
+<a href="#inicio" class="brand brand-logo">
+<img src="logo-hugo-cueva.png" alt="Hugo Cueva - Ingeniero Eléctrico" class="header-logo">
+</a>
+<nav class="nav" id="nav">
+<a href="#inicio" class="nav-link active">Inicio</a>
+<a href="#servicios" class="nav-link">Servicios</a>
+<a href="#nosotros" class="nav-link">Nosotros</a>
+<a href="#proyectos" class="nav-link">Proyectos</a>
+<a href="#certificaciones" class="nav-link">Certificaciones</a>
+<a href="#contacto" class="nav-link">Contacto</a>
+<div class="nav-indicator"></div>
+</nav>
+<a href="#contacto" class="header-button">
+<i data-lucide="zap"></i>
+<span>Cotizar proyecto</span>
+<i data-lucide="arrow-up-right"></i>
+</a>
+<button class="menu-button" id="menuButton" aria-label="Abrir menú">
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+<main>
+<section class="hero section" id="inicio">
+<div class="hero-grid"></div>
+<div class="circuit-lines">
+<div class="circuit circuit-1"><span></span></div>
+<div class="circuit circuit-2"><span></span></div>
+<div class="circuit circuit-3"><span></span></div>
+</div>
+<div class="orb orb-one"></div>
+<div class="orb orb-two"></div>
+<div class="hero-container">
+<div class="hero-content reveal">
+<div class="eyebrow">
+<span class="eyebrow-dot"></span>
+<span>INGENIERÍA · CONSTRUCCIÓN · ENERGÍA</span>
+</div>
+<h1>Construimos<span class="gradient-text">infraestructura.</span>Conectamos energía.</h1>
+<p class="hero-description">En <strong>HUGO CUEVA</strong> ejecutamos contratos y proyectos de construcción, ingeniería e instalaciones eléctricas, combinando experiencia técnica, seguridad y eficiencia en cada obra.</p>
+<div class="hero-actions">
+<a href="#servicios" class="button button-primary">
+<span>Conocer servicios</span>
+<i data-lucide="arrow-right"></i>
+</a>
+<a href="#proyectos" class="button button-secondary">
+<i data-lucide="hard-hat"></i>
+<span>Nuestros proyectos</span>
+</a>
+</div>
+<div class="hero-stats">
+<div class="stat"><strong data-count="100">0</strong><span>%</span><p>Compromiso</p></div>
+<div class="stat-divider"></div>
+<div class="stat"><strong data-count="24">0</strong><span>/7</span><p>Operatividad</p></div>
+<div class="stat-divider"></div>
+<div class="stat"><strong data-count="360">0</strong><span>°</span><p>Gestión integral</p></div>
+</div>
+</div>
+<div class="hero-visual reveal delay">
+<div class="energy-ring energy-ring-one"></div>
+<div class="energy-ring energy-ring-two"></div>
+<div class="energy-ring energy-ring-three"></div>
+<div class="electric-scene">
+<div class="scene-top">
+<div class="live-indicator"><span></span>SISTEMA OPERATIVO</div>
+<div class="voltage"><i data-lucide="zap"></i><span>ENERGÍA</span></div>
+</div>
+<div class="tower">
+<div class="tower-tip"></div>
+<div class="tower-arm arm-one"></div>
+<div class="tower-arm arm-two"></div>
+<div class="tower-body">
+<span class="tower-line line-left"></span>
+<span class="tower-line line-right"></span>
+<span class="tower-cross cross-one"></span>
+<span class="tower-cross cross-two"></span>
+<span class="tower-cross cross-three"></span>
+</div>
+<div class="tower-base"></div>
+</div>
+<div class="power-wire wire-left"><span class="energy-dot dot-a"></span><span class="energy-dot dot-b"></span></div>
+<div class="power-wire wire-right"><span class="energy-dot dot-c"></span><span class="energy-dot dot-d"></span></div>
+<div class="scene-info">
+<span>INFRAESTRUCTURA ELÉCTRICA</span>
+<strong>Potencia que construye futuro.</strong>
+</div>
+<div class="energy-meter">
+<div><span>CARGA</span><strong id="loadValue">78%</strong></div>
+<div class="meter-track"><div class="meter-fill"></div></div>
+</div>
+</div>
+<div class="floating-card floating-one">
+<div class="floating-icon"><i data-lucide="hard-hat"></i></div>
+<div><strong>Construcción</strong><span>Obras e infraestructura</span></div>
+</div>
+<div class="floating-card floating-two">
+<div class="floating-icon lime"><i data-lucide="zap"></i></div>
+<div><strong>Electricidad</strong><span>Instalaciones y redes</span></div>
+</div>
+<div class="floating-card floating-three">
+<div class="floating-icon"><i data-lucide="shield-check"></i></div>
+<div><strong>Seguridad</strong><span>Ejecución responsable</span></div>
+</div>
+</div>
+</div>
+<div class="scroll-indicator"><span>DESCUBRIR</span><div class="scroll-line"><i></i></div></div>
+</section>
+<section class="services section" id="servicios">
+<div class="section-container">
+<div class="section-heading reveal">
+<div><span class="section-number">01</span><span class="section-label">NUESTROS SERVICIOS</span></div>
+<h2>Soluciones para construir,<br><span>conectar y avanzar.</span></h2>
+<p>Integramos construcción, ingeniería y electricidad para ejecutar proyectos seguros, eficientes y adaptados a cada necesidad.</p>
+</div>
+<div class="services-grid">
+<article class="service-card reveal">
+<div class="service-number">01</div>
+<div class="service-icon"><i data-lucide="building-2"></i></div>
+<h3>Construcción de Obras</h3>
+<p>Ejecución y coordinación de obras civiles e infraestructura con planificación, control técnico y seguimiento permanente.</p>
+<a href="#contacto">Solicitar información <i data-lucide="arrow-up-right"></i></a>
+</article>
+<article class="service-card featured reveal">
+<div class="service-number">02</div>
+<div class="service-icon"><i data-lucide="zap"></i></div>
+<h3>Instalaciones Eléctricas</h3>
+<p>Diseño, instalación y adecuación de sistemas eléctricos para proyectos residenciales, comerciales, industriales y de infraestructura.</p>
+<a href="#contacto">Solicitar información <i data-lucide="arrow-up-right"></i></a>
+<div class="card-electric-line"><span></span></div>
+</article>
+<article class="service-card reveal">
+<div class="service-number">03</div>
+<div class="service-icon"><i data-lucide="utility-pole"></i></div>
+<h3>Redes Eléctricas</h3>
+<p>Implementación y adecuación de infraestructura para sistemas de transmisión y distribución de energía eléctrica.</p>
+<a href="#contacto">Solicitar información <i data-lucide="arrow-up-right"></i></a>
+</article>
+<article class="service-card reveal">
+<div class="service-number">04</div>
+<div class="service-icon"><i data-lucide="wrench"></i></div>
+<h3>Mantenimiento Eléctrico</h3>
+<p>Mantenimiento preventivo y correctivo de instalaciones, equipos e infraestructura para garantizar continuidad operativa.</p>
+<a href="#contacto">Solicitar información <i data-lucide="arrow-up-right"></i></a>
+</article>
+<article class="service-card reveal">
+<div class="service-number">05</div>
+<div class="service-icon"><i data-lucide="ruler"></i></div>
+<h3>Ingeniería y Diseño</h3>
+<p>Planificación técnica, levantamientos, análisis y desarrollo de soluciones adaptadas a las condiciones de cada proyecto.</p>
+<a href="#contacto">Solicitar información <i data-lucide="arrow-up-right"></i></a>
+</article>
+<article class="service-card reveal">
+<div class="service-number">06</div>
+<div class="service-icon"><i data-lucide="file-check-2"></i></div>
+<h3>Ejecución de Contratos</h3>
+<p>Administración y ejecución integral de contratos, coordinando recursos, personal, procesos, avances y cumplimiento técnico.</p>
+<a href="#contacto">Solicitar información <i data-lucide="arrow-up-right"></i></a>
+</article>
+</div>
+</div>
+</section>
+
+<!-- NUEVA MISIÓN Y VISIÓN -->
+<section class="identity-section section" id="nosotros">
+<div class="identity-electric-bg">
+<div class="identity-line identity-line-1"><span></span></div>
+<div class="identity-line identity-line-2"><span></span></div>
+<div class="identity-line identity-line-3"><span></span></div>
+</div>
+<div class="section-container">
+<div class="identity-heading reveal">
+<div class="mini-heading">
+<span class="section-number">02</span>
+<span class="section-label">NUESTRA IDENTIDAD</span>
+</div>
+<h2>Construimos con propósito.<br><span>Conectamos el futuro.</span></h2>
+<p>Ingeniería, experiencia y compromiso al servicio de proyectos de construcción e infraestructura eléctrica.</p>
+</div>
+<div class="identity-power-scene" id="identityPowerScene">
+<div class="identity-sky-grid"></div>
+<div class="identity-wire identity-wire-top">
+<span class="wire-energy wire-energy-a"></span>
+</div>
+<div class="identity-wire identity-wire-middle">
+<span class="wire-energy wire-energy-b"></span>
+</div>
+<div class="identity-wire identity-wire-bottom">
+<span class="wire-energy wire-energy-c"></span>
+</div>
+<div class="identity-ground">
+<div class="ground-energy"></div>
+</div>
+<div class="identity-column mission-column">
+<div class="identity-copy mission-copy">
+<div class="identity-copy-top">
+<span class="identity-copy-number">01</span>
+<span class="identity-copy-label">NUESTRA</span>
+</div>
+<h3>Misión</h3>
+<p>Ejecutar proyectos de construcción e instalaciones eléctricas con altos estándares de calidad, seguridad y eficiencia, ofreciendo soluciones técnicas confiables que respondan a las necesidades de nuestros clientes y contribuyan al desarrollo de infraestructura sostenible.</p>
+</div>
+<div class="power-pole mission-pole">
+<div class="pole-glow"></div>
+<div class="pole-lightning"><i data-lucide="zap"></i></div>
+<div class="pole-top"></div>
+<div class="pole-cross pole-cross-one">
+<span class="insulator insulator-left"></span>
+<span class="insulator insulator-center"></span>
+<span class="insulator insulator-right"></span>
+</div>
+<div class="pole-cross pole-cross-two">
+<span class="insulator insulator-left"></span>
+<span class="insulator insulator-right"></span>
+</div>
+<div class="pole-body"></div>
+<div class="pole-brace brace-left"></div>
+<div class="pole-brace brace-right"></div>
+<div class="pole-foot"></div>
+</div>
+</div>
+<div class="identity-column vision-column">
+<div class="identity-copy vision-copy">
+<div class="identity-copy-top">
+<span class="identity-copy-number">02</span>
+<span class="identity-copy-label">NUESTRA</span>
+</div>
+<h3>Visión</h3>
+<p>Consolidarnos como una empresa referente en construcción, ingeniería e infraestructura eléctrica, reconocida por la calidad de nuestros proyectos, innovación, seguridad y capacidad para ejecutar obras que aporten al crecimiento y desarrollo del país.</p>
+</div>
+<div class="power-pole vision-pole">
+<div class="pole-glow"></div>
+<div class="pole-lightning"><i data-lucide="zap"></i></div>
+<div class="pole-top"></div>
+<div class="pole-cross pole-cross-one">
+<span class="insulator insulator-left"></span>
+<span class="insulator insulator-center"></span>
+<span class="insulator insulator-right"></span>
+</div>
+<div class="pole-cross pole-cross-two">
+<span class="insulator insulator-left"></span>
+<span class="insulator insulator-right"></span>
+</div>
+<div class="pole-body"></div>
+<div class="pole-brace brace-left"></div>
+<div class="pole-brace brace-right"></div>
+<div class="pole-foot"></div>
+</div>
+</div>
+</div>
+<div class="identity-values reveal">
+<div class="value-item">
+<div class="value-icon"><i data-lucide="shield-check"></i></div>
+<div><strong>Seguridad</strong><span>Primero en cada proyecto</span></div>
+</div>
+<div class="value-divider"></div>
+<div class="value-item">
+<div class="value-icon"><i data-lucide="badge-check"></i></div>
+<div><strong>Calidad</strong><span>Compromiso con cada obra</span></div>
+</div>
+<div class="value-divider"></div>
+<div class="value-item">
+<div class="value-icon"><i data-lucide="lightbulb"></i></div>
+<div><strong>Innovación</strong><span>Soluciones eficientes</span></div>
+</div>
+<div class="value-divider"></div>
+<div class="value-item">
+<div class="value-icon"><i data-lucide="handshake"></i></div>
+<div><strong>Compromiso</strong><span>Resultados que generan confianza</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="energy-section">
+<div class="energy-background"></div>
+<div class="section-container energy-container">
+<div class="energy-copy reveal">
+<div class="mini-heading light">
+<span class="section-number lime-number">HC</span>
+<span class="section-label">ENERGÍA + INFRAESTRUCTURA</span>
+</div>
+<h2>Ingeniería que mueve<br>cada <span>proyecto.</span></h2>
+<p>Nuestra operación integra planificación, personal técnico, seguridad, construcción e infraestructura eléctrica para desarrollar soluciones completas.</p>
+<a href="#contacto" class="energy-link"><span>Hablemos de tu proyecto</span><i data-lucide="arrow-right"></i></a>
+</div>
+<div class="energy-dashboard reveal">
+<div class="dashboard-header">
+<div><span>MONITOREO DE PROYECTO</span><strong>Ejecución integral</strong></div>
+<div class="dashboard-status"><i></i> OPERATIVO</div>
+</div>
+<div class="energy-chart">
+<div class="chart-lines"><span></span><span></span><span></span><span></span></div>
+<svg viewBox="0 0 600 180" preserveAspectRatio="none">
+<defs>
+<linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#b8cc15" stop-opacity=".25"/>
+<stop offset="100%" stop-color="#b8cc15" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<path class="chart-area" d="M0,145 C50,140 65,110 110,115 C155,120 170,80 215,90 C260,100 285,45 330,62 C375,80 400,30 445,45 C490,60 520,20 600,25 L600,180 L0,180 Z"/>
+<path class="chart-path" d="M0,145 C50,140 65,110 110,115 C155,120 170,80 215,90 C260,100 285,45 330,62 C375,80 400,30 445,45 C490,60 520,20 600,25"/>
+</svg>
+<div class="chart-pulse pulse-one"></div>
+<div class="chart-pulse pulse-two"></div>
+</div>
+<div class="dashboard-metrics">
+<div><i data-lucide="zap"></i><span>ENERGÍA</span><strong>Estable</strong></div>
+<div><i data-lucide="shield-check"></i><span>SEGURIDAD</span><strong>Activa</strong></div>
+<div><i data-lucide="gauge"></i><span>EFICIENCIA</span><strong>Óptima</strong></div>
+</div>
+</div>
+</div>
+</section>
+<section class="projects section" id="proyectos">
+<div class="section-container">
+<div class="projects-heading reveal">
+<div>
+<div class="mini-heading"><span class="section-number">03</span><span class="section-label">PROYECTOS</span></div>
+<h2>De la planificación<br>a la <span>ejecución.</span></h2>
+</div>
+<p>Cada proyecto se desarrolla bajo una gestión integral que combina planificación, control, seguridad y capacidad técnica.</p>
+</div>
+<div class="project-grid">
+<article class="project-card project-large reveal">
+<div class="project-visual visual-electric">
+<div class="project-grid-lines"></div>
+<i data-lucide="utility-pole"></i>
+<div class="electric-beam"></div>
+<div class="project-status active-status"><span></span> EN EJECUCIÓN</div>
+</div>
+<div class="project-content">
+<span>INFRAESTRUCTURA ELÉCTRICA</span>
+<h3>Construcción e instalación de redes eléctricas</h3>
+<p>Ejecución integral de infraestructura, montaje y adecuación de sistemas eléctricos.</p>
+<div class="project-footer"><span><i data-lucide="map-pin"></i> Ecuador</span><i data-lucide="arrow-up-right"></i></div>
+</div>
+</article>
+<article class="project-card reveal">
+<div class="project-visual visual-construction">
+<div class="project-grid-lines"></div>
+<i data-lucide="building-2"></i>
+<div class="project-status"><span></span> PROYECTO</div>
+</div>
+<div class="project-content">
+<span>CONSTRUCCIÓN</span>
+<h3>Obras civiles e infraestructura</h3>
+<p>Planificación y ejecución técnica orientada al cumplimiento contractual.</p>
+<div class="project-footer"><span><i data-lucide="hard-hat"></i> Construcción</span><i data-lucide="arrow-up-right"></i></div>
+</div>
+</article>
+<article class="project-card reveal">
+<div class="project-visual visual-maintenance">
+<div class="project-grid-lines"></div>
+<i data-lucide="settings"></i>
+<div class="project-status"><span></span> SERVICIO</div>
+</div>
+<div class="project-content">
+<span>MANTENIMIENTO</span>
+<h3>Operación y mantenimiento eléctrico</h3>
+<p>Soluciones enfocadas en continuidad, seguridad y confiabilidad operacional.</p>
+<div class="project-footer"><span><i data-lucide="wrench"></i> Mantenimiento</span><i data-lucide="arrow-up-right"></i></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="process-section">
+<div class="section-container">
+<div class="process-heading reveal">
+<span>NUESTRA FORMA DE TRABAJAR</span>
+<h2>Del proyecto a la realidad.</h2>
+</div>
+<div class="process-line">
+<div class="process-progress"></div>
+<div class="process-step reveal">
+<div class="process-circle"><span>01</span></div>
+<i data-lucide="clipboard-list"></i>
+<h3>Planificación</h3>
+<p>Analizamos alcance, recursos, tiempos y requerimientos.</p>
+</div>
+<div class="process-step reveal">
+<div class="process-circle"><span>02</span></div>
+<i data-lucide="ruler"></i>
+<h3>Ingeniería</h3>
+<p>Definimos la solución técnica adecuada para cada proyecto.</p>
+</div>
+<div class="process-step reveal">
+<div class="process-circle"><span>03</span></div>
+<i data-lucide="hard-hat"></i>
+<h3>Ejecución</h3>
+<p>Coordinamos personal, materiales y actividades de obra.</p>
+</div>
+<div class="process-step reveal">
+<div class="process-circle"><span>04</span></div>
+<i data-lucide="badge-check"></i>
+<h3>Entrega</h3>
+<p>Verificamos cumplimiento, calidad y cierre del proyecto.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="certifications section" id="certificaciones">
+<div class="section-container certification-layout">
+<div class="certification-copy reveal">
+<div class="mini-heading"><span class="section-number">04</span><span class="section-label">SEGURIDAD Y CALIDAD</span></div>
+<h2>Construimos con<br><span>responsabilidad.</span></h2>
+<p>La seguridad, el cumplimiento técnico y la mejora continua forman parte fundamental de nuestra forma de ejecutar cada proyecto.</p>
+<div class="certification-points">
+<div><i data-lucide="shield-check"></i><span><strong>Seguridad industrial</strong><small>Prevención y control durante la ejecución.</small></span></div>
+<div><i data-lucide="badge-check"></i><span><strong>Cumplimiento técnico</strong><small>Procesos orientados a estándares de calidad.</small></span></div>
+<div><i data-lucide="users"></i><span><strong>Personal capacitado</strong><small>Equipos preparados para cada actividad.</small></span></div>
+</div>
+</div>
+<div class="certificates reveal">
+<div class="certificate-card">
+<div class="certificate-icon"><i data-lucide="hard-hat"></i></div>
+<div><span>SEGURIDAD</span><h3>Seguridad Industrial</h3><p>Gestión responsable en obra</p></div>
+<i data-lucide="arrow-up-right" class="certificate-arrow"></i>
+</div>
+<div class="certificate-card">
+<div class="certificate-icon"><i data-lucide="zap"></i></div>
+<div><span>ELECTRICIDAD</span><h3>Infraestructura Eléctrica</h3><p>Instalación y mantenimiento</p></div>
+<i data-lucide="arrow-up-right" class="certificate-arrow"></i>
+</div>
+<div class="certificate-card">
+<div class="certificate-icon"><i data-lucide="clipboard-check"></i></div>
+<div><span>GESTIÓN</span><h3>Control de Proyectos</h3><p>Seguimiento técnico y operativo</p></div>
+<i data-lucide="arrow-up-right" class="certificate-arrow"></i>
+</div>
+<div class="certificate-card">
+<div class="certificate-icon"><i data-lucide="award"></i></div>
+<div><span>CALIDAD</span><h3>Mejora Continua</h3><p>Compromiso con resultados</p></div>
+<i data-lucide="arrow-up-right" class="certificate-arrow"></i>
+</div>
+</div>
+</div>
+</section>
+<section class="contact section" id="contacto">
+<div class="contact-grid"></div>
+<div class="contact-glow"></div>
+<div class="contact-energy-line line-energy-one"></div>
+<div class="contact-energy-line line-energy-two"></div>
+<div class="section-container contact-container">
+<div class="contact-copy reveal">
+<div class="mini-heading light"><span class="section-number lime-number">05</span><span class="section-label">CONTACTO</span></div>
+<h2>Construyamos tu<br>próximo <span>proyecto.</span></h2>
+<p>Cuéntanos qué necesitas. Podemos analizar los requerimientos de tu proyecto y desarrollar una solución acorde a sus necesidades técnicas y operativas.</p>
+<div class="contact-data">
+<a href="mailto:contacto@hugocueva.com">
+<div class="contact-icon"><i data-lucide="mail"></i></div>
+<div><small>CORREO ELECTRÓNICO</small><strong>contacto@hugocueva.com</strong></div>
+</a>
+<a href="tel:+593000000000">
+<div class="contact-icon"><i data-lucide="phone"></i></div>
+<div><small>TELÉFONO</small><strong>+593 000 000 000</strong></div>
+</a>
+<div>
+<div class="contact-icon"><i data-lucide="map-pin"></i></div>
+<div><small>UBICACIÓN</small><strong>Ecuador</strong></div>
+</div>
+</div>
+<div class="availability">
+<span class="availability-dot"></span>
+<div><strong>Disponibles para nuevos proyectos</strong><small>Construcción · Electricidad · Infraestructura</small></div>
+</div>
+</div>
+<form class="contact-form reveal" id="contactForm">
+<div class="form-heading">
+<span>SOLICITAR INFORMACIÓN</span>
+<h3>Hablemos de tu proyecto.</h3>
+</div>
+<div class="input-row">
+<div class="input-group">
+<input type="text" id="name" required>
+<label for="name">Nombre / Empresa</label>
+</div>
+<div class="input-group">
+<input type="email" id="email" required>
+<label for="email">Correo electrónico</label>
+</div>
+</div>
+<div class="input-group">
+<select id="service" required>
+<option value="" selected disabled></option>
+<option>Construcción de obras</option>
+<option>Instalaciones eléctricas</option>
+<option>Redes eléctricas</option>
+<option>Mantenimiento eléctrico</option>
+<option>Ingeniería y diseño</option>
+<option>Ejecución de contratos</option>
+<option>Otro servicio</option>
+</select>
+<label for="service" class="select-label">Servicio requerido</label>
+</div>
+<div class="input-group">
+<input type="text" id="subject" required>
+<label for="subject">Nombre del proyecto</label>
+</div>
+<div class="input-group">
+<textarea id="message" rows="4" required></textarea>
+<label for="message">Cuéntanos sobre el proyecto</label>
+</div>
+<button type="submit" class="submit-button">
+<span>Enviar solicitud</span>
+<i data-lucide="send"></i>
+</button>
+<div class="form-message" id="formMessage"></div>
+</form>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-container">
+<a href="#inicio" class="footer-brand footer-brand-logo">
+<img src="logo-hugo-cueva.png" alt="Hugo Cueva - Ingeniero Eléctrico" class="footer-logo">
+</a>
+<div class="footer-center">
+<div class="footer-energy"><i data-lucide="zap"></i><span>Ingeniería que conecta.</span></div>
+<p>© <span id="year"></span> HUGO CUEVA. Todos los derechos reservados.</p>
+</div>
+<div class="footer-links">
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#certificaciones">Certificaciones</a>
+<a href="#contacto">Contacto</a>
+</div>
+</div>
+</footer>
+<button class="back-top" id="backTop" aria-label="Volver arriba"><i data-lucide="arrow-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
